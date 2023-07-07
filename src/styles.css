@@ -1,5 +1,9 @@
+@import '../src/assets/styles/loader.css';
 /* You can add global styles to this file, and also import other style files */
 body{
     margin: 0;
     padding: 0;
+    background-color: #0A192F;
+    color: #8892b0
 }
+

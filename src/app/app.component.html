@@ -1,1 +1,2 @@
-<router-outlet></router-outlet>
+<div class="loader" [class]="divClassName" *ngIf="intro == true"></div>
+<router-outlet  *ngIf="intro == false"></router-outlet>
