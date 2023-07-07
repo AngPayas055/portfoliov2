@@ -11,11 +11,12 @@ export class AppComponent {
   divClassName:string = "scale-display"
   
   ngOnInit(): void {
-    setTimeout(() => {
-      this.divClassName = "scale-display--reversed"
-    }, 2500);
-    setTimeout(() => {
+    // setTimeout(() => {
+    //   this.divClassName = "scale-display--reversed"
+    // }, 2500);
+    // setTimeout(() => {
+    //   this.intro = false
+    // }, 3000);
       this.intro = false
-    }, 3000);
   }
 }

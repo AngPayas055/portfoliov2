@@ -1,0 +1,16 @@
+.header{
+    padding: 0 50px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navs{
+    display: flex;
+    margin-left: 0;
+}
+li{
+    margin-right: 10px;
+    padding: 5px 15px;
+}
