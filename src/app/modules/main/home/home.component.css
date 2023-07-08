@@ -19,8 +19,17 @@
     /* height: 200vh; */
     /* padding: 13vh 0; */
 }
+.short-des{
+    max-width: 350px;
+}
 #about{
-    padding-top: 13vh;
+    padding: 13vh 0;
+}
+#experience{
+    padding: 13vh 0;
+}
+#projects{
+    padding: 13vh 0;
 }
 #about:focus-visible{
     .line{
@@ -72,6 +81,17 @@
     display: inline-block;
 }
 .sec{
-    height: 120vh
+    /* height: 120vh; */
+    padding: 13h 0;
+}
+.custom-icon {
+    font-size: 24px;
+}
+.icons-actions:hover{
+    .custom-icon {
+        font-size: 30px;
+        color: var(--font-secondary)
+    }
+
 }
 
