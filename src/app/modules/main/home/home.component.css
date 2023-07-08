@@ -8,9 +8,70 @@
     width: 47%;
     position: sticky;
     top: 0;
-    height: 100vh;
+    height: 74vh;
+    padding: 13vh 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .group-right{
     width: 47%;
-    height: 200vh;
+    /* height: 200vh; */
+    /* padding: 13vh 0; */
 }
+#about{
+    padding-top: 13vh;
+}
+#about:focus-visible{
+    .line{
+        width: 65px;
+        border-top: 1px solid var(--font-secondary);
+    }
+    .nav-a{
+      color: var(--font-secondary);
+    }
+}
+.nav{
+    margin-top: 9vh;
+    display: flex;
+    flex-direction: column;
+}
+.h-6{
+    height: 20px;
+}
+.w-6{
+    width: 20px;
+}
+.nav-link{
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.nav-link:hover{
+    .line{
+        width: 65px;
+        border-top: 1px solid var(--font-secondary);
+    }
+    .nav-a{
+      color: var(--font-secondary);
+    }
+}
+.active-line {
+    width: 65px;
+    border-top: 1px solid var(--font-secondary);
+  }
+  
+.active-nav {
+    color: var(--font-secondary);
+}
+.line{
+    width: 32px;
+    height: 1px;
+    border-top: 1px solid var(--font-primary);
+    /* background-color: black; */
+    display: inline-block;
+}
+.sec{
+    height: 120vh
+}
+

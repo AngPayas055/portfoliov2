@@ -1,14 +1,49 @@
 @font-face {
     font-family: "SFMono 400";
     src: url("../fonts/SFMono/SFMono-Regular.woff")
-  }
+}
+@font-face {
+  font-family: "Calibre 600";
+  src: url("../fonts/Calibre/Calibre-Semibold.woff")
+}
+@font-face {
+  font-family: "Calibre 400";
+  src: url("../fonts/Calibre/Calibre-Regular.woff")
+}
 
-
+.font-secondary{
+  color: var(--font-secondary);
+}
+h2{
+  font-family: 'Calibre 600';
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 50px;
+  margin: 0;
+}
+h3{
+  font-family: 'Calibre 400';
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 28px;
+  margin: 0;
+}
+h4{
+  font-family: 'Calibre 400';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 0;
+}
+.nav-a{
+  font-family: 'SFMono 400';
+  color: var(--font-primary);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 10px 15px;
+}
 a{
-    font-family: 'SFMono 400';
-    color: #8892b0;
-    text-decoration: none;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 17px;
+  text-decoration: none;
 }
