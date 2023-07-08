@@ -1,11 +1,27 @@
 <div class="header">
     <nav>
-        <h2>Logo</h2>
+        <span class="actions-cont">
+            <h2 class="logo-text">&lt;JM&gt;</h2>
+            <button class="btn-menu"  *ngIf="!isShowMobileMenu" (click)="showMM()">
+                <span class="bar-lg"></span>
+                <span class="bar-md"></span>
+                <span class="bar-sm"></span>
+            </button>
+            <button class="btn-close"  *ngIf="isShowMobileMenu"  (click)="showMM()">
+                X
+            </button>
+        </span>
         <ol class="navs">
             <li><a href=""><span>01. </span>About</a></li>
             <li><a href=""><span>02. </span>Experience</a></li>
             <li><a href=""><span>03. </span>Work</a></li>
             <li><a href=""><span>04. </span>Contact</a></li>
+        </ol>
+        <ol class="navs-mobile" *ngIf="isShowMobileMenu">
+            <div class="bg-blurr">
+                sadfsfd
+                
+            </div>
         </ol>
     </nav>
 </div>

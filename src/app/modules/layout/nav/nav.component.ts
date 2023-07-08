@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent {
+  isShowMobileMenu:boolean = false
 
+  showMM(){
+    this.isShowMobileMenu = !this.isShowMobileMenu
+  }
 }

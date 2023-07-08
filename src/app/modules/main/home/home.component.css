@@ -1,0 +1,16 @@
+.cont{
+    display: flex;
+    max-width: 1100px;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+.group-left{
+    width: 47%;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+.group-right{
+    width: 47%;
+    height: 200vh;
+}
