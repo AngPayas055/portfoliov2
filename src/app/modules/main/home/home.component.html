@@ -10,21 +10,21 @@
             </div>
             <div class="nav">
                 <a href="/main/home#about" class="nav-link">
-                    <span [class.active-line]="activeSection?.id === 'about'" class="line"></span>
+                    <span [class.active-line]="activeSection?.id === 'about'" [class.line]="activeSection?.id != 'about'"></span>
                     <span [class.active-nav]="activeSection?.id === 'about'" class="nav-a">ABOUT</span>
                 </a>
                 <a href="/main/home#experience" class="nav-link">
-                    <span [class.active-line]="activeSection?.id === 'experience'" class="line"></span>
+                    <span [class.active-line]="activeSection?.id === 'experience'" [class.line]="activeSection?.id != 'experience'"></span>
                     <span [class.active-nav]="activeSection?.id === 'experience'" class="nav-a">EXPERIENCE</span>
   
                 </a>
                 <a href="/main/home#projects" class="nav-link"> 
-                    <span [class.active-line]="activeSection?.id === 'projects'" class="line"></span>
+                    <span [class.active-line]="activeSection?.id === 'projects'" [class.line]="activeSection?.id != 'projects'"></span>
                     <span [class.active-nav]="activeSection?.id === 'projects'" class="nav-a">PROJECTS</span>
                 </a>
             </div>
         </div>
-        <div>
+        <div class="btn-icon-cont">
             <a href="https://github.com/AngPayas055" class="icons-actions"><i class="fa-brands fa-github custom-icon mr-25"></i></a>
             <a href="https://www.linkedin.com/in/jhon-rey-mendiola-758685213/" class="icons-actions"><i class="fa-brands fa-linkedin custom-icon mr-25"></i></a>
             <a href="https://drive.google.com/file/d/1ZlCfcb9FupMqW3bHu6RDnnXfJVxabhV3/view?usp=sharing" class="icons-actions"><i class="fa-solid fa-file-pdf custom-icon"></i></a>
@@ -32,6 +32,7 @@
     </div>
     <div class="group-right">
         <div class="sec" id="about">
+            <div class="sec-title">ABOUT</div>
             <div>
                 <p>
                     As a self-taught coder, I embarked on my coding journey by completing the 
@@ -54,6 +55,7 @@
             </div>
         </div>
         <div class="sec" id="experience">
+            <div class="sec-title">EXPERIENCE</div>
             <div class="exp-cont">
                 <div class="exp-left">JAN - MAY 2023</div>
                 <div class="exp-right">                    
@@ -112,6 +114,9 @@
             </div>
 
         </div>
-        <div class="sec" id="projects">projects</div>
+        <div class="sec" id="projects">
+            <div class="sec-title">PROJECTS</div>
+            projects
+        </div>
     </div>
 </div>
