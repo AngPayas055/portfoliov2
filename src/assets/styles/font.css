@@ -35,6 +35,13 @@ h4{
   line-height: 24px;
   margin: 0;
 }
+h5{
+  font-family: 'Calibre 400';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  margin: 0;
+}
 p{
   font-family: 'Calibre 400';
   font-size: 18px;
