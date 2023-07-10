@@ -5,7 +5,7 @@
     justify-content: space-evenly;
 }
 .group-left{
-    width: 45%;
+    width: 43%;
     position: sticky;
     top: 0;
     height: 74vh;
@@ -15,7 +15,7 @@
     justify-content: space-between;
 }
 .group-right{
-    width: 49%;
+    width: 51%;
     /* height: 200vh; */
     /* padding: 13vh 0; */
 }
@@ -31,7 +31,11 @@
 }
 #projects{
     padding: 13vh 0 10vh;
-    height: 100vh;
+    padding-top: calc(13vh - 20px);
+    /* height: 100vh; */
+}
+#footer{
+    padding-bottom: 10vh;
 }
 #about:focus-visible{
     .line{
@@ -112,6 +116,13 @@
     .exp-title{
         color: #5eead4;
     }
+    .exp-left img{
+        border: 1px solid #5eead4;
+    }
+    .fa-arrow-up-right-from-square{
+        font-size: 14px;
+        margin-left: 5px;
+    }
 }
 .exp-left{
     width: 150px;
@@ -147,17 +158,36 @@
     top: 0;
     background-color: #0A192F;
 }
+.sec-title{
+    display: none;
+}
+.exp-left img{
+    width: calc(100% - 25px);
+    margin: 0 25px 0 0;
+    border-radius: 4px;
+}
+.fa-arrow-up-right-from-square{
+    font-size: 12px;
+    margin-left: 5px;
+}
 @media screen and (max-width: 800px){
+    .sec-title{
+        display: block;
+        padding: 20px;
+    }
     .cont{
         flex-direction: column;
         padding: 0 35px;
+    }
+    .about-contents{
+        padding: 0 20px;
     }
     .group-left{
         width: 100%;
         position: relative;
         top: 0;
         height: unset;
-        padding: 8vh 0 3vh;
+        padding: 8vh 20px 3vh 20px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -183,9 +213,12 @@
     } */
 }
 @media screen and (max-width: 600px){
+    .group-left{
+        padding: 8vh 20px 3vh 20px;
+    }
     .cont{
         flex-direction: column;
-        padding: 0 15px;
+        padding: 0;
     }
     .exp-cont{
         display: flex;
@@ -199,5 +232,11 @@
         font-weight: 600;
         line-height: 20px;
         margin-bottom: 15px;
+    }
+    .exp-right{
+        width: 100%;
+    }
+    .sec-title{
+        padding: 20px;
     }
 }
