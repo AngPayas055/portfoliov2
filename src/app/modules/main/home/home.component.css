@@ -185,11 +185,12 @@
         width: calc(100% - 40px);
         position: relative;
         top: 0;
-        height: unset;
+        height: 89vh;
+        /* padding: 13vh 0; */
         padding: 8vh 20px 3vh 20px;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
     .group-right{
         width: 100%;
