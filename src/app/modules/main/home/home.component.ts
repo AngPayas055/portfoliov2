@@ -19,7 +19,6 @@ export class HomeComponent {
       const section = sections[i] as HTMLElement;
       const sectionTop = section.offsetTop - 10;
       const sectionHeight = section.offsetHeight;
-      console.log(sectionTop)
 
       if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
         this.activeSection = section;

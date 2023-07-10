@@ -114,8 +114,8 @@
 .loader:before {
 	/* Label properties */
 	content: "JMendiola";
-	color: #fafad2;
-	text-shadow: 0.5vmin 0.5vmin 0 #000;
+	color: var(--font-highlight);
+	text-shadow: 0.5vmin 0.5vmin 0 Black ;
 	font-family: fantasy;
 	display: block;
 	width: 40vmin;
