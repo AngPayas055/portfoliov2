@@ -366,3 +366,9 @@
 			var(--x-6) var(--y-2) var(--c-6-2);
 	}
 }
+
+@media screen and (max-width: 600px){
+	.loader:before {
+		font-size: 10vw;
+	}
+}
