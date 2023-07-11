@@ -1,6 +1,7 @@
 @import '../src/assets/styles/loader.css';
 @import '../src/assets/styles/font.css';
 @import '../src/assets/styles/utilities.css';
+@import '../src/assets/styles/keyframes.css';
 /* You can add global styles to this file, and also import other style files */
 body{
     --font-primary: #94a3b8;

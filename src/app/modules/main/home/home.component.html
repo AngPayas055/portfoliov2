@@ -1,14 +1,14 @@
 <div class="cont">
     <div class="group-left">
         <div class="head-cont">
-            <div class="head">
+            <div class="head slide-down">
                 <h2 class="font-secondary">Jhon Mendiola</h2>
                 <h3 class="font-secondary mt-5">Software Engineer</h3>
                 <h4 class="mt-15 short-des">I'm an experienced Angular developer, specializing in responsive web app development 
                     with a focus on robust and user-friendly solutions.
                 </h4>
             </div>
-            <div class="nav">
+            <div class="nav slide-in-10">
                 <a href="/main/home#about" class="nav-link">
                     <span [class.active-line]="activeSection?.id === 'about'" [class.line]="activeSection?.id != 'about'"></span>
                     <span [class.active-nav]="activeSection?.id === 'about'" class="nav-a">ABOUT</span>
@@ -24,7 +24,7 @@
                 </a>
             </div>
         </div>
-        <div class="btn-icon-cont">
+        <div class="btn-icon-cont slide-up">
             <a target="_blank" href="https://github.com/AngPayas055" class="icons-actions"><i class="fa-brands fa-github custom-icon mr-25"></i></a>
             <a target="_blank" href="https://www.linkedin.com/in/jhon-rey-mendiola-758685213/" class="icons-actions"><i class="fa-brands fa-linkedin custom-icon mr-25"></i></a>
             <a target="_blank" href="https://drive.google.com/file/d/1RXBKzLAWNdPfNwrBgXGfl7mT_IViyBkP/view?usp=sharing" class="icons-actions"><i class="fa-solid fa-file-pdf custom-icon"></i></a>
@@ -33,7 +33,7 @@
     <div class="group-right">
         <div class="sec" id="about" #aboutSection>
             <div class="sec-title">ABOUT</div>
-            <div class="about-contents">
+            <div class="about-contents slide-out-15">
                 <p>
                     As a self-taught coder, I embarked on my coding journey by completing the 
                     <span class="font-secondary">Responsive Web Design certification</span> on freecodecamp. 
@@ -56,7 +56,7 @@
         </div>
         <div class="sec" id="experience">
             <div class="sec-title pl-20">EXPERIENCE</div>
-            <a class="exp-cont">
+            <a class="exp-cont slide-out-15">
                 <div class="exp-left">JAN - MAY 2023</div>
                 <div class="exp-right">                    
                     <h3 class="font-secondary exp-title">Frontend Dev • Aditri Tech World <i class="fa-solid fa-arrow-up-right-from-square custom-arr"></i></h3>                    
