@@ -3,6 +3,9 @@
     height: 100px;
     display: flex;
     align-items: center;
+    display: none;
+    position: sticky;
+    top: 0;
 }
 nav{
     display: flex;
@@ -14,10 +17,31 @@ nav{
     display: flex;
     margin-left: 0;
 }
+.nav-outer{
+    max-width: 280px;
+    width: 100%;
+    margin-left: auto;
+    background-color: var(--bg-primary);
+    height: 100vh;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+.nav-cont{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+}
+.btn-icon-cont{
+    margin-left: 40px;
+}
 .actions-cont{
     display: flex;
     justify-content:space-between;
-    align-items: center
+    align-items: center;
+    margin-top: 15px;
 }
 li{
     margin-right: 10px;
@@ -36,21 +60,21 @@ li{
     display: inline-block;
     width: 33px;
     height: 1px;
-    border-top: 2px solid #64ffda;
+    border-top: 3px solid #64ffda;
     margin-bottom: 7px;
 }
 .bar-md{
     display: inline-block;
     width: 28px;
     height: 1px;
-    border-top: 2px solid #64ffda;
+    border-top: 3px solid #64ffda;
     margin-bottom: 7px;
 }
 .bar-sm{
     display: inline-block;
     width: 23px;
     height: 1px;
-    border-top: 2px solid #64ffda;    
+    border-top: 3px solid #64ffda;    
     margin-bottom: 7px;
 }
 .btn-close{
@@ -58,7 +82,7 @@ li{
     border: none;
     background-color: #0A192F;
     font-size: 30px;
-    z-index: 11;
+    z-index: 1001
 }
 .logo-text{
     color: #64ffda;
@@ -71,6 +95,46 @@ li{
     bottom: 0;
     right: 0;
     left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+.line{
+    width: 32px;
+    height: 1px;
+    border-top: 2px solid var(--font-primary);
+    /* background-color: black; */
+    display: inline-block;
+}
+.nav-link{
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.nav-link:hover{
+    .line{
+        width: 65px;
+        border-top: 2px solid var(--font-secondary);
+    }
+    .nav-a{
+      color: var(--font-secondary);
+    }
+}
+.custom-icon {
+    font-size: 24px;
+}
+.icons-actions:hover{
+    .custom-icon {
+        font-size: 30px;
+        color: var(--font-secondary)
+    }
+
+}
+@media screen and (max-width: 800px){
+    .header{
+        display: block;
+        z-index: 1000;
+    }
 }
 @media screen and (max-width: 700px){
     .btn-menu{

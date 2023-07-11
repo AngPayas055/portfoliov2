@@ -6,12 +6,13 @@ body{
     --font-primary: #94a3b8;
     --font-secondary: #e2e8f0;
     --font-highlight: #5eead4;
+    --bg-primary: #0A192F
     
 }
 body{
     margin: 0;
     padding: 0;
-    background-color: #0A192F;
+    background-color: var(--bg-primary);
     color: var(--font-primary)
 }
 ol{

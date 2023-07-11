@@ -58,6 +58,15 @@ p{
   line-height: 20px;
   padding: 10px 15px;
 }
+.nav-a-mobile{
+  font-family: 'SFMono 400';
+  color: var(--font-primary);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 10px 15px;
+}
 a{
   text-decoration: none;
   color: var(--font-primary);

@@ -1,25 +1,48 @@
 <div class="header">
     <nav>
         <span class="actions-cont">
-            <h2 class="logo-text">&lt;JM&gt;</h2>
+            <!-- <h2 class="logo-text">&lt;JM&gt;</h2> -->
+            <h2></h2>
             <button class="btn-menu"  *ngIf="!isShowMobileMenu" (click)="showMM()">
                 <span class="bar-lg"></span>
                 <span class="bar-md"></span>
                 <span class="bar-sm"></span>
             </button>
             <button class="btn-close"  *ngIf="isShowMobileMenu"  (click)="showMM()">
-                X
+                <i class="fa-sharp fa-solid fa-xmark"></i>
             </button>
         </span>
-        <ol class="navs">
+        <!-- <ol class="navs">
             <li><a href=""><span>01. </span>About</a></li>
             <li><a href=""><span>02. </span>Experience</a></li>
             <li><a href=""><span>03. </span>Work</a></li>
             <li><a href=""><span>04. </span>Contact</a></li>
-        </ol>
+        </ol> -->
         <ol class="navs-mobile" *ngIf="isShowMobileMenu">
             <div class="bg-blurr">
-                sadfsfd
+                <div class="nav-outer">
+                    <span></span>
+                    <div class="nav-cont">
+                        <a href="/main/home#about" class="nav-link">
+                            <span class="line"></span>
+                            <span class="nav-a-mobile">ABOUT</span>
+                        </a>
+                        <a href="/main/home#experience" class="nav-link">
+                            <span class="line"></span>
+                            <span class="nav-a-mobile">EXPERIENCE</span>
+          
+                        </a>
+                        <a href="/main/home#projects" class="nav-link"> 
+                            <span class="line"></span>
+                            <span class="nav-a-mobile">PROJECTS</span>
+                        </a>
+                    </div>
+                    <div class="btn-icon-cont">
+                        <a href="https://github.com/AngPayas055" class="icons-actions"><i class="fa-brands fa-github custom-icon mr-25"></i></a>
+                        <a href="https://www.linkedin.com/in/jhon-rey-mendiola-758685213/" class="icons-actions"><i class="fa-brands fa-linkedin custom-icon mr-25"></i></a>
+                        <a href="https://drive.google.com/file/d/1ZlCfcb9FupMqW3bHu6RDnnXfJVxabhV3/view?usp=sharing" class="icons-actions"><i class="fa-solid fa-file-pdf custom-icon"></i></a>
+                    </div>
+                </div>
                 
             </div>
         </ol>
