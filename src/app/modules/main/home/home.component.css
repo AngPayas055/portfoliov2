@@ -180,6 +180,7 @@
     }
     .about-contents{
         padding: 0 20px;
+        margin-top: 3vh;
     }
     .group-left{
         width: calc(100% - 40px);
@@ -200,6 +201,18 @@
     }
     .btn-icon-cont{
         margin-top: 35px;
+    }
+    #about{
+        padding: 0 0 23vh;
+    }
+    #experience{
+        padding: 0 0 23vh;
+        /* padding-top: calc(13vh - 20px); */
+    }
+    #projects{
+        padding: 0 0 23vh;
+        /* padding-top: calc(13vh - 20px); */
+        /* height: 100vh; */
     }
 }
 @media screen and (max-width: 600px){
