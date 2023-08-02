@@ -39,6 +39,11 @@
     padding-bottom: 10vh;
     padding-top: 5vh;
 }
+#contact{
+    padding: 13vh 0 10vh;
+    padding-top: calc(13vh - 20px);
+    min-height: 85vh;
+}
 #about:focus-visible{
     .line{
         width: 65px;
