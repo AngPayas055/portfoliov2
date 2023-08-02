@@ -1,4 +1,6 @@
 import {  Component, HostListener, ElementRef  } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
+import emailjs from '@emailjs/browser';
 
 @Component({
   selector: 'app-home',
@@ -7,8 +9,14 @@ import {  Component, HostListener, ElementRef  } from '@angular/core';
 })
 export class HomeComponent {
   activeSection: HTMLElement | null = null;
-
-  constructor(private elementRef: ElementRef) {}
+  form: FormGroup = this.fb.group({
+    from_name: "",
+    to_name: "Admin",
+    from_email: "",
+    subject: "",
+    message: "",
+  })
+  constructor(private elementRef: ElementRef, private fb: FormBuilder) {}
 
   @HostListener('window:scroll')
   onScroll(): void {
@@ -25,6 +33,19 @@ export class HomeComponent {
         break;
       }
     }
+  }
+  async send(){
+    emailjs.init('H5dz_L9_DPJUVZf7c')
+    let response = await emailjs.send("service_p54fhys","template_59h2538",{
+      from_name: this.form.value.form_name,
+      to_name:  this.form.value.to_name,
+      from_email:  this.form.value.from_email,
+      subject:  this.form.value.subject,
+      message:  this.form.value.message,
+    });
+    alert('sent message')
+    this.form.reset()
+
   }
 
 }

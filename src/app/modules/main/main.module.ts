@@ -4,6 +4,7 @@ import { MainComponent } from './main.component';
 import { MainRoutingModule } from './main-routing.module';
 import { HomeComponent } from './home/home.component';
 import { LayoutModule } from '../layout/layout.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { LayoutModule } from '../layout/layout.module';
   imports: [
     CommonModule,
     MainRoutingModule,
-    LayoutModule
+    LayoutModule,FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class MainModule { }
