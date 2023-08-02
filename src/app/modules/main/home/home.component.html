@@ -192,22 +192,23 @@
                 </div>
             </a>
         </div>
-        <!-- <div class="sec" id="contact">
+        <div class="sec" id="contact">
             <div class="sec-title">CONTACT</div>
-            <div >
-                <form action="javascript:void(0)" (submit)="send()" [formGroup]="form">
-                    <input formControlName="from_name" type="text" name="from_name" id="name" placeholder="Full Name"><br>
-                    <input formControlName="from_email" type="email" name="from_email" id="email" placeholder="Please enter your email"><br>
-                    <input formControlName="subject" type="text" name="subject" id="name" placeholder="Enter your subject"><br>
-                    <textarea formControlName="message" rows="6" name="message" id="message" placeholder="Type your subject">                    
+            <div  class="form-cont">
+                <form class="form" action="javascript:void(0)" (submit)="send()" [formGroup]="form">
+                    <div class="input-cont">
+                        <input formControlName="from_name" type="text" name="from_name" id="name" placeholder="Full Name" required>
+                        <input formControlName="from_email" type="email" name="from_email" id="email" placeholder="Please enter your email" required>
+                        <input formControlName="subject" type="text" name="subject" id="name" placeholder="Enter your subject" required>
+                    </div>
+                    <textarea formControlName="message" class="textarea" rows="6" name="message" id="message" placeholder="Type your message" required>                    
                     </textarea>
                     <div>
-                        <button type="submit">Submit</button>
+                        <button type="submit" class="btn-contact">Submit</button>
                     </div>
                 </form>
             </div>
-            {{form.value | json}}
-        </div> -->
+        </div>
         <footer class="sec"  id="footer">
             <div class="about-contents">
                 <p>

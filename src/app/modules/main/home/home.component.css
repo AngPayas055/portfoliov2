@@ -37,6 +37,7 @@
 }
 #footer{
     padding-bottom: 10vh;
+    padding-top: 5vh;
 }
 #about:focus-visible{
     .line{
@@ -160,6 +161,39 @@
 .fa-arrow-up-right-from-square{
     font-size: 12px;
     margin-left: 5px;
+}
+.form input, .form textarea{
+    border-radius: 10px;
+    padding: 8px 10px;
+    margin: 5px 0
+}
+.textarea{
+    width: calc(100% - 22px);
+}
+.form-cont{
+    padding: 15px;
+}
+.input-cont{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.btn-contact{
+    background-color: #122B39;
+    color: #fff;
+    /* color: #5eead4; */
+    padding: 15px 25px 12px;
+    border-radius:15px;
+    font-family: 'Calibre 400';
+    font-size: 18px;
+    font-weight: 700;
+    margin: 10px 10px 0 0;
+    display: inline-block;
+    border: 1px solid #122B39;
+}
+.btn-contact:hover{
+    border: 1px solid #5eead4;
+    color: #5eead4;
 }
 @media screen and (max-width: 800px){
     .sec-title{
